@@ -1,0 +1,112 @@
+.homepage {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  padding: 20px;
+  background-color: #cdeafe;
+}
+
+header {
+  background-color: #96d1f8;
+  color: #e3e3e3;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  flex: 1;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 1.8em;
+}
+
+header p {
+  font-size: 1.2em;
+  color: #dbdbdb;
+}
+
+main {
+  margin: 20px 0;
+}
+
+.car-options {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.car-card {
+  flex: 1;
+  background-color: #ecf0f1;
+  border: 1px solid #bdc3c7;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 8px;
+  transition: transform 0.3s ease-in-out;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+
+  img {
+    max-width: 100%;
+    border-radius: 8px;
+  }
+
+  h2 {
+    margin-top: 10px;
+    font-size: 1.5em;
+    color: #96d1f8;
+  }
+
+  p {
+    color: #34495e;
+  }
+}
+
+.filters {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 0;
+
+  label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.2em;
+  }
+
+  select {
+    margin-top: 5px;
+    padding: 5px;
+    border: 1px solid #bdc3c7;
+    border-radius: 4px;
+  }
+}
+
+footer {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #96d1f8;
+  color: #bdc3c7;
+}
+
+body::-webkit-scrollbar {
+  width: 12px; /* Set the width of the scrollbar */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #3498db; /* Color of the thumb */
+  border-radius: 6px; /* Round the corners of the thumb */
+}
+
+body::-webkit-scrollbar-track {
+  background-color: #ecf0f1; /* Color of the track */
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background-color: #2980b9; /* Change thumb color on hover */
+}
