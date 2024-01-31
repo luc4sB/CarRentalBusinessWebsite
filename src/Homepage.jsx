@@ -1,10 +1,10 @@
 import React, { useState } from "react";
-import "./App.css";
+import "./styles/App.css";
 import FilterModal from "./modal.jsx"
 import autoCompact from "./images/compactCar.jpg";
 import manualSUV from "./images/suvCar.jpg";
 import Login from "./login.jsx";
-
+import HomeBanner from "./HomeBanner.jsx";
 
 
 const carData = [
@@ -72,18 +72,11 @@ const Homepage = () => {
   });
 
   return (
-
     <div className="homepage">
-
-      <header>
-        <div className="logo">
-          <h1>Car Rental Business</h1>
-        </div>
-        <p>Explore our fleet and find your perfect ride.</p>
-      </header>
+      <HomeBanner/>
       <main>
 
-        <button onClick={toggleFilterModal} className="filter-toggle-button">
+        <button id="Filter-button" onClick={toggleFilterModal} className="filter-toggle-button">
           Show Filters
         </button>
         <FilterModal
@@ -99,7 +92,7 @@ const Homepage = () => {
               <img
                 src={car.image}
                 alt={car.model}
-                style={{ maxWidth: "300px", maxHeight: "200px" }}
+                style={{ maxWidth: "200px", maxHeight: "200px" }}
               />
               <h2>{car.model}</h2>
               <p>

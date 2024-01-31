@@ -2,17 +2,21 @@
   font-family: Poppins, 'Segoe UI', Tahoma, Geneva, Verdana, 
 }
 
+
 .homepage {
   margin-top: 50px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   text-align: center;
-  padding: 20px;
-  background-color: #cdeafe;
+  
+  background-color: #80d1e5;
   z-index: 1;
 }
 
+
 header {
-  background-color: #96d1f8;
+  background-color: #fff7ee;
+  border: 1.5px solid #2d2e32;
+  border-radius: 20px;
   color: #e3e3e3;
   padding: 20px;
   display: flex;
@@ -31,16 +35,32 @@ body {
 header h1 {
   margin: 0;
   font-size: 1.8em;
-  color: rgb(0, 65, 87)
+  color: #2d2e32;
 }
 
 header p {
   font-size: 1.2em;
-  color: #dbdbdb;
+  color: #2d2e32;
 }
 
 main {
   margin: 20px 0;
+}
+
+#Filter-button {
+  margin: 10px;
+  background-color: #1f466b;
+  border: none;
+  border-radius: 7px;
+  color: #fff7ee;
+  width: 100px;
+  height: 37px;
+  font-weight: 900;
+}
+#Filter-button:hover {
+  border: 1.5px solid #2d2e32;
+  background-color: #fff7ee;
+  color: #14293d;
 }
 
 .car-options {
@@ -54,6 +74,7 @@ main {
   background-color: #ecf0f1;
   border: 1px solid #bdc3c7;
   padding: 20px;
+  width: 150px;
   margin: 10px;
   border-radius: 8px;
   transition: transform 0.3s ease-in-out;

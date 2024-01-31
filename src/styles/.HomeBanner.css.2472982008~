@@ -1,0 +1,28 @@
+
+#Main-title {
+  Font-size: 40px;
+}
+
+#home-banner-text {
+  z-index: 5;
+  color: #243c42;
+  text-align: left;
+  
+}
+
+#background-car {
+  z-index: 0;
+  width: 80%;
+  max-width: 500px;
+  min-width: 200px;
+  height: 180px;
+  object-fit: cover;
+  object-position: bottom;
+  
+}
+.home-banner {
+  display: flex;
+  flex-direction: row;
+  
+  
+}
