@@ -1,0 +1,105 @@
+#FilterBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+  
+  background-color: #e0f7ff77;
+  height: 250px;
+  border-radius: 15px;
+  margin: 10px;
+  margin-top: 20px;
+  color: #2d2e32;
+}
+
+
+#FilterBox-inputs {
+  
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 5px;
+
+  div {
+    margin: 2px;
+  }
+  justify-content: space-evenly;
+  p {
+    font-family: poppins;
+    font-weight: 600;
+    font-size: 15px;
+    margin: 10px 0;
+  }
+  button {
+    
+    margin: 10px;
+    background-color: #1f466b;
+    border: none;
+    color: #1f466b;
+    border-radius: 7px;
+    color: #fff7ee;
+    width: 70px;
+    width: 20vw;
+    height: 40px;
+    font-weight: 900;
+  }
+  button:hover {
+    border: 1.5px solid #2d2e32;
+    background-color: #80d1e5;
+    background-color: #fff7ee;
+    color: #14293d;
+  }
+}
+
+#col1 {
+  display: flex;
+  flex-direction: column;
+  width: 33vh;
+  
+  border-radius: 15px;
+  
+}
+
+#col2 {
+  display: flex;
+  flex-direction: column;
+  width: 33vh;
+  
+  border-radius: 15px;
+}
+
+#col3 {
+  display: flex;
+  flex-direction: column;
+  width: 33vh;
+  
+  border-radius: 15px;
+}
+#search-button {
+  padding-top: 30px;
+}
+
+#rent-a-car-divider {
+  display: block;
+  height: 1px;
+  width: 200px;
+  border: 0;
+  border-top: 1px solid #2d2e32;
+  margin: 0;
+  padding-bottom: 18px;
+  align-self: center;
+}
+
+select {
+  padding: 5px;
+  width: 27vw;
+  border-radius: 2px;
+  color: #999;
+  border-color: #999;
+}
+input {
+  padding: 5px;
+  width: 27vw;
+  border-radius: 2px;
+  color: #999;
+  border-color: #999;
+}

@@ -5,7 +5,7 @@ import autoCompact from "./images/compactCar.jpg";
 import manualSUV from "./images/suvCar.jpg";
 import Login from "./login.jsx";
 import HomeBanner from "./HomeBanner.jsx";
-
+import FilterBox from "./FilterBox.jsx"
 
 const carData = [
   {
@@ -73,7 +73,10 @@ const Homepage = () => {
 
   return (
     <div className="homepage">
+      
       <HomeBanner/>
+      <FilterBox/>
+      
       <main>
 
         <button id="Filter-button" onClick={toggleFilterModal} className="filter-toggle-button">

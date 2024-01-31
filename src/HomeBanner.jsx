@@ -1,5 +1,6 @@
 import Car from "./images/Car.png";
 import "./styles/HomeBanner.css";
+import FilterBox from "./FilterBox.jsx"
 
 const HomePage = () => {
   return (
@@ -16,6 +17,7 @@ const HomePage = () => {
         alt="car-img"
         id="background-car"
       />
+      
     </div>
     
   )

@@ -71,8 +71,9 @@ main {
 
 .car-card {
   flex: 1;
-  background-color: #ecf0f1;
-  border: 1px solid #bdc3c7;
+  background-color: #fff7ee;
+  
+  border: 1.5px solid #1f466b;
   padding: 20px;
   width: 150px;
   margin: 10px;
@@ -91,11 +92,11 @@ main {
   h2 {
     margin-top: 10px;
     font-size: 1.5em;
-    color: #96d1f8;
+    color: #2d2e32;
   }
 
   p {
-    color: #34495e;
+    color: #2d2e32;
   }
 }
 
