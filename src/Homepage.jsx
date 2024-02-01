@@ -6,6 +6,8 @@ import manualSUV from "./images/suvCar.jpg";
 import Login from "./login.jsx";
 import HomeBanner from "./HomeBanner.jsx";
 import FilterBox from "./FilterBox.jsx"
+import About from "./About.jsx"
+
 
 const carData = [
   {
@@ -76,7 +78,7 @@ const Homepage = () => {
       
       <HomeBanner/>
       <FilterBox/>
-      
+      <About/>
       <main>
 
         <button id="Filter-button" onClick={toggleFilterModal} className="filter-toggle-button">
