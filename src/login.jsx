@@ -23,7 +23,7 @@ function Login() {
             <p>Username: </p>
             <input type="text" id="fname" name="fname"/>
             <p>Password: </p>
-            <input type="text" id="fname" name="fname"/>
+            <input type="password" id="fname" name="fname"/>
             <button id="login-button" onClick={() => setLogin("LoggedIn")}>
               Login
             </button>
