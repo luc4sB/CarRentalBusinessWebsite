@@ -84,3 +84,15 @@ input {
   padding: 3px;
   
 }
+
+.password-input-container {
+  position: relative;
+}
+
+.password-icon {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
