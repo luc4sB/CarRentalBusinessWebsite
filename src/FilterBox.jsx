@@ -1,8 +1,9 @@
 import "./styles/FilterBox.css"
 
 const FilterBox = () => {
+  
   const carTypeOptions = [
-    "VW golf 6", "Toyota Corolla", "Audi A3", "BMW 3", "Mercedes A-Class"]
+    "SUV", "Mini", "Sedan", "Sports", "Luxury", "Electric", "Hybrid", "Convertible"]
 
   const Locations = [
     "London", "Birmingham", "Lemington Spa"
