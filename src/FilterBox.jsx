@@ -1,4 +1,5 @@
 import "./styles/FilterBox.css"
+import { Outlet, Link } from "react-router-dom";
 
 const FilterBox = () => {
   
@@ -47,7 +48,12 @@ const FilterBox = () => {
               <option value="" selected="selected">Select Location</option>
               {Locations.map((location) => <option>{location}</option>)}
             </select></div>
-            <div id="search-button" className="input-box"><button>Search</button></div>
+            <div id="search-button" className="input-box">
+              <Link to="./choosecar">
+                <button >Search</button>
+              </Link>
+            </div>
+          
           
           
         </div>
@@ -55,5 +61,6 @@ const FilterBox = () => {
     </section>
   )
 }
+
 
 export default FilterBox

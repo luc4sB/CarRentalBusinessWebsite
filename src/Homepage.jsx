@@ -79,7 +79,6 @@ const Homepage = () => {
       <HomeBanner/>
       <FilterBox/>
       <About/>
-      <PickYourCar/>
 
       <main>
 
@@ -111,10 +110,7 @@ const Homepage = () => {
 
       </main>
       <footer>
-        <p>
-          &copy; {new Date().getFullYear()} Car Rental Business. All rights reserved.
-
-        </p>
+        
 
       </footer>
     </div>

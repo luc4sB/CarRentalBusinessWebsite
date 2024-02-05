@@ -1,0 +1,99 @@
+
+
+
+
+#login-button {
+  margin: 10px;
+  background-color: #1f466b;
+  border: none;
+  color: #1f466b;
+  border-radius: 7px;
+  color: #fff7ee;
+  width: 70px;
+  height: 37px;
+  font-weight: 900;
+}
+.carousel-container {
+  overflow: hidden;
+  width: 500px;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+
+  img {
+    width: 50%;
+  }
+  
+}
+
+.carousel-item-container {
+  white-space: nowrap;
+  transition: transform 0.4s;
+  
+}
+
+.carousel-item {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 400px;
+  background-color: #f0f0f0;
+  background-color: #fff;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.carousel-item-text {
+  font-size: 1.15rem;
+  margin: 40px 0 40px 0;
+  padding: 0 20px 0 20px;
+  white-space: normal;
+  color: #2d2e32;
+}
+.carousel-img {
+  width: 250px;
+  padding: 0 20px 0 20px;
+}
+
+/* final stage */
+
+.carousel-buttons {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #fff7ee;
+  border-radius: 20px;
+  padding-bottom: 10px;
+}
+
+.button-arrow {
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.indicators {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.indicator-buttons {
+  border: none;
+  cursor: pointer;
+}
+
+.indicators > button {
+  margin: 5px;
+  background: none;
+}
+
+.indicator-symbol {
+  color: #26343f;
+}
+
+.indicator-symbol-active {
+  color: #ffffff;
+}
