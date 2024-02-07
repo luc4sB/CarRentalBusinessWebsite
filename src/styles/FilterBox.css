@@ -61,7 +61,8 @@
     color: #1f466b;
     border-radius: 7px;
     color: #fff7ee;
-    width: 20vw;
+    width: 18vw;
+    max-width: 200px; /*Button was too wide on larger displays so introduced a maximum width*/
     height: 40px;
     font-weight: 900;
   }

@@ -40,4 +40,7 @@
   width: 63vw;
   object-fit: scale-down;
   border: 0px solid #222;
+  @media (max-width: 500px) {
+    padding-bottom: 105px;
+  }
 }

@@ -7,7 +7,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import NavBar from "./NavBar.jsx";
 import PickYourCar from "./PickYourCar.jsx";
 import End from "./End.jsx";
-
+import ClientProfile from "./ClientProfile.jsx"
 
 
 
@@ -25,7 +25,8 @@ const App = () => {
             <Route path="/" element={<Homepage />}/>
             <Route index element={<Homepage />} />
             <Route path="/homepage" element={<Homepage/>} />
-            <Route path="/choosecar" element={<PickYourCar/>} />
+            <Route exact path="/choosecar" element={<PickYourCar/>} />
+            <Route exact path="/login/profile" element={<ClientProfile/>} />
             <Route path="/login" element={<Login/>} />
             
             <Route path="*" element={<Homepage />} />

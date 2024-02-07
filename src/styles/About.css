@@ -1,7 +1,27 @@
 #about-section {
-  height: 300px;
+  height: 180px;
   background-color: #fff7ee;
   box-shadow: 0px 0px 4px #666;
+  padding-bottom: 5px;
+  justify-content: center;
+
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+
+  padding: 10px;
+
+  @media (max-width: 500px) {
+    height: 350px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  div {
+    margin: 2px;
+  }
+  justify-content: space-evenly;
+}
+
+#about-section > div {
+  padding: 10px;
 }
 .about-item {
   margin-top: 20px;

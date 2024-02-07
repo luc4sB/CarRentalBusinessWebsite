@@ -33,7 +33,10 @@
     color: #2d2e32;
     cursor: pointer;
 }
-
+.center-title {
+  margin-left: auto; /* Push the centered title to the center */
+  text-align: center; /* Center the text */
+}
 
 
 .navbar.scrolled {
@@ -59,6 +62,3 @@ a:hover {
         margin: 0;
     }
 }
-
-
-

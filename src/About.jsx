@@ -1,6 +1,11 @@
-import React from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCheck, faTimes, faExchangeAlt, faDollarSign } from '@fortawesome/free-solid-svg-icons';
+import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faCheck,
+  faTimes,
+  faExchangeAlt,
+  faDollarSign,
+} from "@fortawesome/free-solid-svg-icons";
 import "./styles/About.css";
 
 const About = () => {
@@ -13,7 +18,7 @@ const About = () => {
 
       <div className="about-item">
         <FontAwesomeIcon icon={faExchangeAlt} className="icon" />
-        <p>Cancel or change most bookings for free up to 48 hours before pick-up</p>
+        <p>Cancel or rearrange bookings for free up to 24 hours before pick-up</p>
       </div>
 
       <div className="about-item">
@@ -23,10 +28,10 @@ const About = () => {
 
       <div className="about-item">
         <FontAwesomeIcon icon={faDollarSign} className="icon" />
-        <p>Know exactly what you’re paying, Price Match Guarantee</p>
+        <p>Know you're getting the best deal, Price Match Guarantee</p>
       </div>
     </section>
   );
-}
+};
 
 export default About;

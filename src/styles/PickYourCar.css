@@ -5,9 +5,10 @@
     align-items: center;
     display: flex;
     background-color: #80d1e5;
-    padding-top: 20px;
+    padding-top: 40px;
     background-color: #80d1e5;
-    height: 100vh;
+    height: 120vh;
+    max-height: 800px;
 }
 
 #pick-car-container {
@@ -24,7 +25,8 @@
   h1 {
     text-align: left;
     padding: 20px;
-    padding-right: 250px;
+    padding-bottom: 0px;
+    padding-right: 215px;
   }
   align-content: center;
   justify-content: center;
@@ -54,3 +56,6 @@
   background-color: #fff7ee;
 }
 
+#Choose-your-car-text {
+  width: 400px;
+}

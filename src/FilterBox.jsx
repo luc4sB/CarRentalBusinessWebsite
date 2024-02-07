@@ -1,7 +1,10 @@
 import "./styles/FilterBox.css"
 import { Outlet, Link } from "react-router-dom";
+import React, { useState } from "react";
+
 
 const FilterBox = () => {
+  const [selectedCarType, setSelectedCarType] = useState("");
   
   const carTypeOptions = [
     "SUV", "Mini", "Sedan", "Sports", "Luxury", "Electric", "Hybrid", "Convertible"]
@@ -10,7 +13,29 @@ const FilterBox = () => {
     "London", "Birmingham", "Lemington Spa"
   ]
 
-
+  const cars = [
+    {
+      title: "SUV1",
+      description:
+        "Car 1 description text",
+      image: "Car1",
+      type: "SUV",
+    },
+    {
+      title: "SUV2",
+      description:
+        "Car 2 description text",
+      image: "Car2",
+      type: "SUV",
+    },
+    {
+      title: "Mini1",
+      description:
+        "Car 3 description text",
+      image: "Car2",
+      type: "Mini",
+    },
+  ];
   
       
   return (
@@ -23,9 +48,9 @@ const FilterBox = () => {
           
           
             
-            <div id="car-type" className="input-box"><p>Car Type*</p><select name="car-type" className="InputAndSelect" id="car-type-select">
+            <div id="car-type" className="input-box"><p>Car Type*</p><select name="car-type" className="InputAndSelect" id="car-type-select" onChange={(e) => setSelectedCarType(e.target.value)} >
               <option value="" selected="selected">Select Car Type</option>
-              {carTypeOptions.map((carType) => <option>{carType}</option>)}
+              {carTypeOptions.map((carType) => ( <option key={carType} value={carType}>{carType}</option>))}
             </select></div>
             
             <div id="pickup-location" className="input-box"><p>Pickup Location*</p><select className="InputAndSelect" name="subject" id="subject">
@@ -49,7 +74,7 @@ const FilterBox = () => {
               {Locations.map((location) => <option>{location}</option>)}
             </select></div>
             <div id="search-button" className="input-box">
-              <Link to="./choosecar">
+              <Link to={`./choosecar#${selectedCarType}`}>
                 <button >Search</button>
               </Link>
             </div>
@@ -63,4 +88,4 @@ const FilterBox = () => {
 }
 
 
-export default FilterBox
+export default FilterBox;

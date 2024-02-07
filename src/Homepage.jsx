@@ -80,8 +80,8 @@ const Homepage = () => {
       <FilterBox/>
       <About/>
 
-      <main>
-
+      
+        {/*
         <button id="Filter-button" onClick={toggleFilterModal} className="filter-toggle-button">
           Show Filters
         </button>
@@ -107,8 +107,8 @@ const Homepage = () => {
             </div>
           ))}
         </section>
-
-      </main>
+*/}
+      
       <footer>
         
 

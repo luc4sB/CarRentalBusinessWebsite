@@ -1,21 +1,53 @@
 import "./styles/Login.css";
 import GoogleLogin from "react-google-login";
 import { useState } from "react";
+import { useEffect } from "react";
 import '@fortawesome/fontawesome-free/css/all.css';
+import { Outlet, Link } from "react-router-dom";
+import ClientProfile from "./ClientProfile.jsx";
 
 
-function setLoginState() {}
+
+
 
 function Login() {
   const responseGoogle = (response) => {
     console.log(response);
   };
-  const [login, setLogin] = useState("LoggedOut");
+  const [login, setLogin] = useState(false);
   const [password, setPassword] = useState("");
+  
   const [showPassword, setShowPassword] = useState(false);
+  
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
 
+  useEffect(() => {
+    
+    // Checks if the user is already logged in
+    const isLoggedInCookie = document.cookie.includes('isLoggedIn=true');
+    setIsLoggedIn(isLoggedInCookie);
+  }, []);
+
+  const handleLogin = () => {
+    // Set a cookie to indicate that the user is logged in
+    document.cookie = 'isLoggedIn=true; expires=Fri, 31 Dec 9999 23:59:59 GMT';
+    setIsLoggedIn(true);
+    
+    console.log(document.cookie.split(';'));
+  };
+  const handleLogout = () => {
+    // Remove the isLoggedIn cookie to log the user out
+    document.cookie = 'isLoggedIn=false; expires=Thu, 01 Jan 1970 00:00:00 GMT';
+    setIsLoggedIn(false);
+  };
+
+  
+
+  
   return (
     <>
+      
+    {!isLoggedIn ? (
       <section id="LoginPage">
         <div id="LoginPage-container">
           <h1>Login</h1>
@@ -40,9 +72,16 @@ function Login() {
               ></i>
             </div>
             <br></br>
-            <button id="login-button" onClick={() => setLogin("LoggedIn")}>
-              Login
-            </button>
+            
+              
+            
+                <button id="login-button" onClick={handleLogin}>
+                  
+                  Login
+                </button>
+            
+            
+            
             <a>Forgot Password</a>
           </div>
           <hr className="divider"></hr>
@@ -58,6 +97,14 @@ function Login() {
           </div>
         </div>
       </section>
+    ) : (
+      <div>
+        
+        <ClientProfile/>
+        <button id="login-button" onClick={handleLogout}>Logout</button>
+      </div>
+      )}
+      
     </>
   );
 }
