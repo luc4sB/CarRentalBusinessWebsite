@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./styles/Carousel.css";
 import CarouselItem from "./CarouselItem";
+import HyundaiSUV from "./images/HyundaiSUV.png";
 import Car1 from "./images/Car.png";
 import Car2 from "./images/Car.png";
 
@@ -14,14 +15,14 @@ const PickCarCarousel = () => {
       title: "Car 1 - SUV",
       description:
         "Car 1 - SUV description text",
-      image: Car1,
+      image: HyundaiSUV,
       type: "SUV",
     },
     {
       title: "Car 2 - SUV",
       description:
         "Car 2 - SUV description text",
-      image: Car1,
+      image: Car2,
       type: "SUV",
     },
     {
