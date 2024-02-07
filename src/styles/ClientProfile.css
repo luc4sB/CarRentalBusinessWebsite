@@ -1,0 +1,49 @@
+#ClientProfile {
+    display: flex;
+    flex-direction: column;  
+    width: 100vw;
+    height: 900px;
+    
+    color: #2d2e32;
+    padding-left: 100px;
+    padding-top: 80px;
+    h1 {
+        font-size: 30px;
+    }
+    
+}
+
+#client-profile-container {
+    width: 100%;
+    margin: 0 20px;
+    
+    color: #2d2e32;
+    height: 500px;
+    
+}
+#current-cars-container {
+    width: 600px;
+    height: 300px;
+    border: 1.5px solid #1f466b;
+    border-radius: 20px;
+    background-color: #fff7ee;
+    margin-left: 20px;
+    box-shadow: 10px 10px 0px #1f466b;
+}
+
+#history-container {
+    background-color: #fff7ee;
+    width: 600px;
+    height: 300px;
+    border: 1.5px solid #1f466b;
+    border-radius: 20px;
+    margin-left: 20px;
+    box-shadow: 10px 10px 0px #1f466b;
+}
+#logout-button {
+    margin-top: 25px;
+}
+#logout-button:hover {
+    
+    background-color: #fff7ee;
+}
